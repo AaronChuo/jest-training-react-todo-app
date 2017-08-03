@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TodoItem /> should render initial component 1`] = `
+<li
+  className=""
+>
+  <div
+    className="view"
+  >
+    <input
+      checked={false}
+      className="toggle"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <label
+      onDoubleClick={[Function]}
+    >
+      Use Redux
+    </label>
+    <button
+      className="destroy"
+      onClick={[Function]}
+    />
+  </div>
+</li>
+`;
+
+exports[`<TodoItem /> simulates double click to editing mode 1`] = `
+Object {
+  "editing": true,
+}
+`;
+
+exports[`<TodoItem /> simulates double click to editing mode 2`] = `
+<li
+  className="editing"
+>
+  <TodoTextInput
+    editing={true}
+    onSave={[Function]}
+    text="Use Redux"
+  />
+</li>
+`;
+
+exports[`<TodoItem /> simulates save todo in editing mode 1`] = `
+<li
+  className="editing"
+>
+  <TodoTextInput
+    editing={true}
+    onSave={[Function]}
+    text="Use Redux"
+  />
+</li>
+`;
+
+exports[`<TodoItem /> simulates save todo in editing mode 2`] = `
+<li
+  className=""
+>
+  <div
+    className="view"
+  >
+    <input
+      checked={false}
+      className="toggle"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <label
+      onDoubleClick={[Function]}
+    >
+      Use Redux
+    </label>
+    <button
+      className="destroy"
+      onClick={[Function]}
+    />
+  </div>
+</li>
+`;
+
+exports[`<TodoItem /> simulates save todo without text in editing mode 1`] = `
+<li
+  className="editing"
+>
+  <TodoTextInput
+    editing={true}
+    onSave={[Function]}
+    text="Use Redux"
+  />
+</li>
+`;
+
+exports[`<TodoItem /> simulates save todo without text in editing mode 2`] = `
+<li
+  className=""
+>
+  <div
+    className="view"
+  >
+    <input
+      checked={false}
+      className="toggle"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <label
+      onDoubleClick={[Function]}
+    >
+      Use Redux
+    </label>
+    <button
+      className="destroy"
+      onClick={[Function]}
+    />
+  </div>
+</li>
+`;

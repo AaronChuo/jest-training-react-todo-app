@@ -1,0 +1,169 @@
+{
+  "name": "Termly",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Taroko Software",
+  "license": "MIT",
+  "engine": "node >= 6.10.0",
+  "devDependencies": {
+    "allure-commandline": "^1.5.0",
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^7.1.0",
+    "babel-loader": "^6.3.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-react-constant-elements": "^6.23.0",
+    "babel-plugin-transform-react-inline-elements": "^6.22.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.3.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "better-npm-run": "^0.0.14",
+    "body-parser": "^1.17.0",
+    "chai": "^3.5.0",
+    "chimp": "^0.47.2",
+    "classnames": "^2.2.5",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.1",
+    "css-loader": "^0.26.1",
+    "enzyme": "^2.7.1",
+    "enzyme-to-json": "^1.5.0",
+    "eslint": "^3.16.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-flowtype": "^2.30.0",
+    "eslint-plugin-react": "^6.10.0",
+    "express": "^4.15.0",
+    "express-unless": "^0.3.0",
+    "extract-text-webpack-plugin": "beta",
+    "file-loader": "^0.10.0",
+    "html-webpack-plugin": "^2.28.0",
+    "identity-obj-proxy": "^3.0.0",
+    "image-webpack-loader": "2.0.0",
+    "ip": "^1.1.4",
+    "jest-cli": "^20.0.4",
+    "json-server": "^0.9.5",
+    "lowdb": "^0.15.5",
+    "morgan": "^1.8.1",
+    "node-sass": "^4.5.0",
+    "nodemon": "^1.11.0",
+    "open": "^0.0.5",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-loader": "^1.3.1",
+    "randomstring": "^1.1.5",
+    "react-addons-test-utils": "^15.4.2",
+    "redux-devtools-extension": "^2.13.0",
+    "redux-immutable-state-invariant": "^1.2.4",
+    "redux-logger": "^2.8.1",
+    "sass-loader": "^6.0.1",
+    "selenium-standalone": "6.1.0",
+    "style-loader": "^0.13.1",
+    "stylelint": "^7.9.0",
+    "stylelint-webpack-plugin": "^0.6.0",
+    "url-loader": "^0.5.7",
+    "wdio-allure-reporter": "^0.1.2",
+    "wdio-mocha-framework": "^0.5.9",
+    "wdio-selenium-standalone-service": "^0.0.8",
+    "wdio-spec-reporter": "^0.0.5",
+    "webdriverio": "^4.6.2",
+    "webpack": "^2.2.1",
+    "webpack-bundle-analyzer": "^2.3.0",
+    "webpack-dev-server": "^2.4.1",
+    "webpack-merge": "^3.0.0"
+  },
+  "scripts": {
+    "dev": "bnr dev:hot",
+    "build": "rm -rf ./dist/* && bnr build:prod",
+    "build-staging": "rm -rf ./dist/* && bnr build:staging",
+    "watch": "rm -rf ./dist/* && bnr watch",
+    "test": "jest --watch --no-cache --coverage",
+    "widget": "webpack -p --config ./configs/webpack.widget.js",
+    "widget-watch": "webpack --watch --config ./configs/webpack.widget.js",
+    "ci_test": "jest --coverage",
+    "api": "nodemon server.api.js",
+    "e2e": "./node_modules/.bin/wdio ./e2e/wdio.conf.js",
+    "e2e-demo": "./node_modules/.bin/wdio ./e2e/wdio.conf.js --suite demo",
+    "e2e-chimp": "./node_modules/.bin/chimp --mocha --watch --path=e2e/test",
+    "e2e-allure": "allure report generate allure-results",
+    "e2e-report": "allure report open",
+    "e2e-selenium": "selenium-standalone start"
+  },
+  "betterScripts": {
+    "dev:hot": {
+      "command": "node server.hot.js",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    "build:prod": {
+      "command": "webpack -p --config ./configs/webpack.production.js",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "build:staging": {
+      "command": "webpack -p --config ./configs/webpack.staging.js",
+      "env": {
+        "NODE_ENV": "staging"
+      }
+    },
+    "watch": {
+      "command": "webpack --watch --config ./configs/webpack.development.js",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  },
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "isomorphic-fetch": "^2.2.1",
+    "jasmine-reporters": "^2.2.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.13",
+    "react": "^15.4.2",
+    "react-cookie": "^1.0.4",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "react-router": "2.8.1",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.6.0",
+    "redux-auth-wrapper": "^1.0.0",
+    "redux-form": "^6.5.0",
+    "redux-saga": "^0.14.3",
+    "todomvc-app-css": "2.1.0"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/tests/",
+      "<rootDir>/src/"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "testRegex": "\\.(spec|e2e|snapshot)\\.js$",
+    "coverageDirectory": "<rootDir>/tests/__coverage__/",
+    "setupTestFrameworkScriptFile": "<rootDir>/setup-jasmine-env.js",
+    "coverageReporters": [
+      "json",
+      "html",
+      "text"
+    ],
+    "browser": true,
+    "moduleNameMapper": {
+      "components(.*)": "<rootDir>/src/components$1",
+      "utils(.*)": "<rootDir>/src/utils$1",
+      "constants(.*)": "<rootDir>/src/constants$1",
+      "containers(.*)": "<rootDir>/src/containers$1",
+      "reducers(.*)": "<rootDir>/src/reducers$1",
+      "routing(.*)": "<rootDir>/src/routing$1",
+      "actions(.*)": "<rootDir>/src/actions$1",
+      "sagas(.*)": "<rootDir>/src/sagas$1",
+      "hoc(.*)": "<rootDir>/src/hoc$1",
+      "widget(.*)": "<rootDir>/widget$1",
+      "mock-data": "<rootDir>/tests/__mocks__/mockData.js",
+      "^.+\\.(scss|css|svg|png)$": "identity-obj-proxy"
+    }
+  }
+}

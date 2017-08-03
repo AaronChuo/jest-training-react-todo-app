@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TodoTextInput /> should render initial component 1`] = `
+<input
+  className="edit new-todo"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onKeyDown={[Function]}
+  placeholder="Please fill your name"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`<TodoTextInput /> simulates Enter key down to save edited todo 1`] = `
+<input
+  className="edit"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onKeyDown={[Function]}
+  placeholder="Please fill your name"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`<TodoTextInput /> simulates Enter key down to save new todo 1`] = `
+<input
+  className="edit new-todo"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onKeyDown={[Function]}
+  placeholder="Please fill your name"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`<TodoTextInput /> simulates blur to save current text 1`] = `
+<input
+  className="edit"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onKeyDown={[Function]}
+  placeholder="Please fill your name"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`<TodoTextInput /> simulates change text 1`] = `
+Object {
+  "text": "changed text",
+}
+`;
+
+exports[`<TodoTextInput /> simulates change text 2`] = `
+<input
+  className="edit new-todo"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onKeyDown={[Function]}
+  placeholder="Please fill your name"
+  type="text"
+  value="changed text"
+/>
+`;

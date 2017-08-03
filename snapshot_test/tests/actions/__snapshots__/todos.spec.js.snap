@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todos actions should dispatch ADD_TODO action 1`] = `
+Object {
+  "payload": Object {},
+  "type": "ADD_TODO",
+}
+`;
+
+exports[`Todos actions should dispatch CLEAR_COMPLETED action 1`] = `
+Object {
+  "type": "CLEAR_COMPLETED",
+}
+`;
+
+exports[`Todos actions should dispatch COMPLETE_ALL action 1`] = `
+Object {
+  "type": "COMPLETE_ALL",
+}
+`;
+
+exports[`Todos actions should dispatch COMPLETE_TODO action 1`] = `
+Object {
+  "payload": Object {},
+  "type": "COMPLETE_TODO",
+}
+`;
+
+exports[`Todos actions should dispatch DELETE_TODO action 1`] = `
+Object {
+  "payload": Object {},
+  "type": "DELETE_TODO",
+}
+`;
+
+exports[`Todos actions should dispatch EDIT_TODO action 1`] = `
+Object {
+  "payload": Object {},
+  "type": "EDIT_TODO",
+}
+`;

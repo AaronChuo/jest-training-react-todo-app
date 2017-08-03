@@ -1,0 +1,541 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should render component with an active todo 1`] = `
+<footer
+  className="footer"
+>
+  <span
+    className="todo-count"
+  >
+    <strong>
+      1
+    </strong>
+     
+    item
+     left
+  </span>
+  <ul
+    className="filters"
+  >
+    <li>
+      <a
+        className={
+          Object {
+            "selected": true,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        All
+      </a>
+    </li>
+    <li>
+      <a
+        className={
+          Object {
+            "selected": false,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        Active
+      </a>
+    </li>
+    <li>
+      <a
+        className={
+          Object {
+            "selected": false,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        Completed
+      </a>
+    </li>
+  </ul>
+  <button
+    className="clear-completed"
+    onClick={[Function]}
+  >
+    Clear completed
+  </button>
+</footer>
+`;
+
+exports[`<Footer /> should render component with filter SHOW_ACTIVE 1`] = `
+<footer
+  className="footer"
+>
+  <span
+    className="todo-count"
+  >
+    <strong>
+      2
+    </strong>
+     
+    items
+     left
+  </span>
+  <ul
+    className="filters"
+  >
+    <li>
+      <a
+        className={
+          Object {
+            "selected": false,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        All
+      </a>
+    </li>
+    <li>
+      <a
+        className={
+          Object {
+            "selected": true,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        Active
+      </a>
+    </li>
+    <li>
+      <a
+        className={
+          Object {
+            "selected": false,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        Completed
+      </a>
+    </li>
+  </ul>
+  <button
+    className="clear-completed"
+    onClick={[Function]}
+  >
+    Clear completed
+  </button>
+</footer>
+`;
+
+exports[`<Footer /> should render component with filter SHOW_COMPLETED 1`] = `
+<footer
+  className="footer"
+>
+  <span
+    className="todo-count"
+  >
+    <strong>
+      2
+    </strong>
+     
+    items
+     left
+  </span>
+  <ul
+    className="filters"
+  >
+    <li>
+      <a
+        className={
+          Object {
+            "selected": false,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        All
+      </a>
+    </li>
+    <li>
+      <a
+        className={
+          Object {
+            "selected": false,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        Active
+      </a>
+    </li>
+    <li>
+      <a
+        className={
+          Object {
+            "selected": true,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        Completed
+      </a>
+    </li>
+  </ul>
+  <button
+    className="clear-completed"
+    onClick={[Function]}
+  >
+    Clear completed
+  </button>
+</footer>
+`;
+
+exports[`<Footer /> should render component with multiple active todos 1`] = `
+<footer
+  className="footer"
+>
+  <span
+    className="todo-count"
+  >
+    <strong>
+      2
+    </strong>
+     
+    items
+     left
+  </span>
+  <ul
+    className="filters"
+  >
+    <li>
+      <a
+        className={
+          Object {
+            "selected": true,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        All
+      </a>
+    </li>
+    <li>
+      <a
+        className={
+          Object {
+            "selected": false,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        Active
+      </a>
+    </li>
+    <li>
+      <a
+        className={
+          Object {
+            "selected": false,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        Completed
+      </a>
+    </li>
+  </ul>
+  <button
+    className="clear-completed"
+    onClick={[Function]}
+  >
+    Clear completed
+  </button>
+</footer>
+`;
+
+exports[`<Footer /> should render component without any active todo 1`] = `
+<footer
+  className="footer"
+>
+  <span
+    className="todo-count"
+  >
+    <strong>
+      No
+    </strong>
+     
+    items
+     left
+  </span>
+  <ul
+    className="filters"
+  >
+    <li>
+      <a
+        className={
+          Object {
+            "selected": true,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        All
+      </a>
+    </li>
+    <li>
+      <a
+        className={
+          Object {
+            "selected": false,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        Active
+      </a>
+    </li>
+    <li>
+      <a
+        className={
+          Object {
+            "selected": false,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        Completed
+      </a>
+    </li>
+  </ul>
+  <button
+    className="clear-completed"
+    onClick={[Function]}
+  >
+    Clear completed
+  </button>
+</footer>
+`;
+
+exports[`<Footer /> should render component without any completed todo 1`] = `
+<footer
+  className="footer"
+>
+  <span
+    className="todo-count"
+  >
+    <strong>
+      2
+    </strong>
+     
+    items
+     left
+  </span>
+  <ul
+    className="filters"
+  >
+    <li>
+      <a
+        className={
+          Object {
+            "selected": true,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        All
+      </a>
+    </li>
+    <li>
+      <a
+        className={
+          Object {
+            "selected": false,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        Active
+      </a>
+    </li>
+    <li>
+      <a
+        className={
+          Object {
+            "selected": false,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        Completed
+      </a>
+    </li>
+  </ul>
+</footer>
+`;
+
+exports[`<Footer /> should render initial component 1`] = `
+<footer
+  className="footer"
+>
+  <span
+    className="todo-count"
+  >
+    <strong>
+      2
+    </strong>
+     
+    items
+     left
+  </span>
+  <ul
+    className="filters"
+  >
+    <li>
+      <a
+        className={
+          Object {
+            "selected": true,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        All
+      </a>
+    </li>
+    <li>
+      <a
+        className={
+          Object {
+            "selected": false,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        Active
+      </a>
+    </li>
+    <li>
+      <a
+        className={
+          Object {
+            "selected": false,
+          }
+        }
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        Completed
+      </a>
+    </li>
+  </ul>
+  <button
+    className="clear-completed"
+    onClick={[Function]}
+  >
+    Clear completed
+  </button>
+</footer>
+`;

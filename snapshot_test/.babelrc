@@ -1,0 +1,18 @@
+{
+  "presets": [
+    ["latest", { "modules": false}],
+    "stage-2",
+    "react"
+  ],
+  "plugins": [
+    "syntax-dynamic-import",
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-react-remove-prop-types",
+        "transform-react-inline-elements"
+      ]
+    }
+  }
+}

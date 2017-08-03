@@ -1,0 +1,302 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "test@test.com",
+      "password": "test",
+      "active_subscription": true,
+      "first_name": "test1",
+      "last_name": "test1",
+      "avatar": {
+        "url": "url to s3"
+      },
+      "guest": false,
+      "active_subscriber": true
+    },
+    {
+      "id": 2,
+      "email": "test2@test.com",
+      "password": "test",
+      "active_subscription": false,
+      "first_name": "test2",
+      "last_name": "test2",
+      "avatar": {
+        "url": "url to s3"
+      },
+      "guest": true,
+      "active_subscriber": true
+    },
+    {
+      "id": 3,
+      "email": "test3@test.com",
+      "password": "test",
+      "active_subscription": true,
+      "first_name": "test3",
+      "last_name": "test3",
+      "avatar": {
+        "url": "url to s3"
+      },
+      "guest": true,
+      "active_subscriber": true
+    },
+    {
+      "id": 4,
+      "email": "test4@test.com",
+      "password": "test",
+      "active_subscription": true,
+      "first_name": "test4",
+      "last_name": "test4",
+      "avatar": {
+        "url": "url to s3"
+      },
+      "guest": true,
+      "active_subscriber": true
+    },
+    {
+      "id": 5,
+      "password": "test",
+      "active_subscription": true,
+      "avatar": {
+        "url": "url to s3"
+      },
+      "first_name": "sam",
+      "last_name": "sam",
+      "email": "samzaza@test.com",
+      "guest": true,
+      "active_subscriber": true
+    },
+    {
+      "id": 6,
+      "email": "sam@test.com",
+      "password": "samuele89",
+      "active_subscription": true,
+      "first_name": "test",
+      "last_name": "test",
+      "avatar": {
+        "url": "url to s3"
+      },
+      "guest": true
+    },
+    {
+      "id": 7,
+      "email": "test324234@test.com",
+      "password": "samuele89",
+      "active_subscription": true,
+      "first_name": "test",
+      "last_name": "test",
+      "avatar": {
+        "url": "url to s3"
+      },
+      "guest": true
+    },
+    {
+      "id": 8,
+      "email": "samuele@test.com",
+      "password": "samuele89",
+      "active_subscription": true,
+      "first_name": "test",
+      "last_name": "test",
+      "avatar": {
+        "url": "url to s3"
+      },
+      "guest": true
+    },
+    {
+      "id": 9,
+      "email": "samuele90@test.com",
+      "password": "samuele89",
+      "active_subscription": true,
+      "first_name": "test",
+      "last_name": "test",
+      "avatar": {
+        "url": "url to s3"
+      },
+      "guest": true
+    }
+  ],
+  "documents": [
+    {
+      "id": 1,
+      "template_id": 1,
+      "website_id": 1,
+      "document_version_id": 2,
+      "user_id": 1,
+      "data": {},
+      "accepted_version": 1,
+      "document_version": 5,
+      "deny_latest": true,
+      "latest": false,
+      "show_notification": true,
+      "notify_user": true,
+      "website_name": "Youtube",
+      "name": "Terms of Use",
+      "show_notification_to_owner": true,
+      "show_notfication_to_user_of_owner": false,
+      "released_date": "2011-12-21"
+    },
+    {
+      "id": 2,
+      "template_id": 1,
+      "website_id": 3,
+      "document_version_id": 2,
+      "user_id": 5,
+      "data": {},
+      "accepted_version": 1,
+      "document_version": 2,
+      "deny_latest": true,
+      "latest": true,
+      "show_notification": true,
+      "notify_user": true,
+      "website_name": "Youtube",
+      "name": "Terms of Use",
+      "show_notfication_to_user_of_owner": false,
+      "show_notification_to_owner": true,
+      "released_date": "2011-12-21"
+    },
+    {
+      "id": 3,
+      "template_id": 1,
+      "website_id": 3,
+      "document_version_id": 2,
+      "user_id": 5,
+      "data": {},
+      "accepted_version": 1,
+      "document_version": 2,
+      "deny_latest": true,
+      "latest": true,
+      "show_notification": true,
+      "notify_user": true,
+      "website_name": "Youtube",
+      "name": "Terms of Use",
+      "show_notfication_to_user_of_owner": false,
+      "show_notification_to_owner": true,
+      "released_date": "2011-12-21"
+    },
+    {
+      "id": 5,
+      "template_id": 1,
+      "website_id": 3,
+      "document_version_id": 2,
+      "user_id": 5,
+      "data": {},
+      "accepted_version": 1,
+      "document_version": 2,
+      "deny_latest": true,
+      "latest": true,
+      "show_notification": true,
+      "notify_user": true,
+      "website_name": "Youtube",
+      "name": "Terms of Use",
+      "show_notification_to_owner": true,
+      "show_notification_to_user_of_owner": true,
+      "released_date": "2011-12-21"
+    }
+  ],
+  "plans": [
+    {
+      "amount_in_cents": 995,
+      "description": "One website plan",
+      "id": 1,
+      "user_current_in": false,
+      "websites_allowed": 1
+    },
+    {
+      "amount_in_cents": 1995,
+      "description": "three websites plan",
+      "id": 2,
+      "user_current_in": true,
+      "websites_allowed": 2
+    },
+    {
+      "amount_in_cents": 2995,
+      "description": "unlimited websites plan",
+      "id": 3,
+      "user_current_in": false,
+      "websites_allowed": 1000
+    }
+  ],
+  "subscriptions": [
+    {
+      "plan_id": 1
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_type": "Charged",
+      "amount_in_cents": "3995",
+      "description": "",
+      "status": "paid",
+      "created_at": "1490601020"
+    },
+    {
+      "transaction_type": "Charged",
+      "amount_in_cents": "3995",
+      "description": "Invalid request errors arise when your request has invalid parameters.",
+      "status": "failed",
+      "created_at": "1490601020"
+    },
+    {
+      "transaction_type": "Charged",
+      "amount_in_cents": "2995",
+      "description": "Invalid request errors arise when your request has invalid parameters.",
+      "status": "failed",
+      "created_at": "1490601020"
+    }
+  ],
+  "websites": [
+    {
+      "id": 1,
+      "user_id": 5,
+      "name": "test23",
+      "url": "http://s3.amazone/url_to_our_logo",
+      "logo": {
+        "url": "http://s3.amazone/url_to_our_logo"
+      },
+      "documents": [
+        {
+          "name": "terms of use",
+          "id": 1,
+          "uuid": "abcdfsfdf12121231"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "sdsd",
+      "url": "dsd",
+      "logo": {
+        "url": "http://s3.amazone/url_to_our_logo"
+      },
+      "documents": [
+        {
+          "name": "terms of use",
+          "id": 2,
+          "uuid": "llpdfdf4545e4f"
+        }
+      ]
+    }
+  ],
+  "billing": [
+    {
+      "current_period_start": "1490601020",
+      "current_period_end": "1493596800",
+      "plan_description": "Unlimited Access 1 website/app",
+      "pricing": "1995",
+      "subscription_status": "trailing",
+      "credit_card": {
+        "last4": "4557",
+        "exp_month": 5,
+        "exp_year": 3000
+      }
+    }
+  ],
+  "templates": [
+    {
+      "id": 1,
+      "name": "Terms of Use - Mobile"
+    }
+  ],
+  "notify_user": "1",
+  "data": "fdsfds",
+  "deny_latest": "true"
+}

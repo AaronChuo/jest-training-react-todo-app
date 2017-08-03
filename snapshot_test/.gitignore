@@ -1,0 +1,10 @@
+dist
+node_modules
+.DS_Store
+stats.html
+npm-debug.log
+allure-results
+allure-report
+errorShots
+tests/__coverage__/*
+output/*

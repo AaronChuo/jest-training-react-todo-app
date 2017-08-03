@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todos reducer should add new todo 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "id": 2,
+    "text": "meeting with team members",
+  },
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "Use Redux",
+  },
+  Object {
+    "completed": true,
+    "id": 1,
+    "text": "Use CodeSandbox",
+  },
+]
+`;
+
+exports[`Todos reducer should clear completed todo 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "Use Redux",
+  },
+]
+`;
+
+exports[`Todos reducer should complete all todos 1`] = `
+Array [
+  Object {
+    "completed": true,
+    "id": 0,
+    "text": "Use Redux",
+  },
+  Object {
+    "completed": true,
+    "id": 1,
+    "text": "Use CodeSandbox",
+  },
+]
+`;
+
+exports[`Todos reducer should complete the todo 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "Use Redux",
+  },
+  Object {
+    "completed": false,
+    "id": 1,
+    "text": "Use CodeSandbox",
+  },
+]
+`;
+
+exports[`Todos reducer should delete the todo 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "Use Redux",
+  },
+]
+`;
+
+exports[`Todos reducer should edit the todo 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "Use Redux",
+  },
+  Object {
+    "completed": true,
+    "id": 1,
+    "text": "dinner with boss",
+  },
+]
+`;
+
+exports[`Todos reducer should return current state with wrong action 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "Use Redux",
+  },
+  Object {
+    "completed": true,
+    "id": 1,
+    "text": "Use CodeSandbox",
+  },
+]
+`;
+
+exports[`Todos reducer should return initial state 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "Use Redux",
+  },
+  Object {
+    "completed": true,
+    "id": 1,
+    "text": "Use CodeSandbox",
+  },
+]
+`;

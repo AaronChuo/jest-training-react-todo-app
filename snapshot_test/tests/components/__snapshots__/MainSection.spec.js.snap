@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MainSection /> should render component with filter SHOW_ACTIVE 1`] = `
+<section
+  className="main"
+>
+  <input
+    checked={false}
+    className="toggle-all"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <ul
+    className="todo-list"
+  >
+    <TodoItem
+      clearCompleted={[Function]}
+      completeAll={[Function]}
+      completeTodo={[Function]}
+      deleteTodo={[Function]}
+      editTodo={[Function]}
+      todo={
+        Object {
+          "completed": false,
+          "id": 0,
+          "text": "Use Redux",
+        }
+      }
+    />
+  </ul>
+  <Footer
+    activeCount={1}
+    completedCount={1}
+    filter="show_active"
+    onClearCompleted={[Function]}
+    onShow={[Function]}
+  />
+</section>
+`;
+
+exports[`<MainSection /> should render component with filter SHOW_COMPLETED 1`] = `
+<section
+  className="main"
+>
+  <input
+    checked={false}
+    className="toggle-all"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <ul
+    className="todo-list"
+  >
+    <TodoItem
+      clearCompleted={[Function]}
+      completeAll={[Function]}
+      completeTodo={[Function]}
+      deleteTodo={[Function]}
+      editTodo={[Function]}
+      todo={
+        Object {
+          "completed": true,
+          "id": 1,
+          "text": "Use CodeSandbox",
+        }
+      }
+    />
+  </ul>
+  <Footer
+    activeCount={1}
+    completedCount={1}
+    filter="show_completed"
+    onClearCompleted={[Function]}
+    onShow={[Function]}
+  />
+</section>
+`;
+
+exports[`<MainSection /> should render initial component 1`] = `
+<section
+  className="main"
+>
+  <input
+    checked={false}
+    className="toggle-all"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <ul
+    className="todo-list"
+  >
+    <TodoItem
+      clearCompleted={[Function]}
+      completeAll={[Function]}
+      completeTodo={[Function]}
+      deleteTodo={[Function]}
+      editTodo={[Function]}
+      todo={
+        Object {
+          "completed": false,
+          "id": 0,
+          "text": "Use Redux",
+        }
+      }
+    />
+    <TodoItem
+      clearCompleted={[Function]}
+      completeAll={[Function]}
+      completeTodo={[Function]}
+      deleteTodo={[Function]}
+      editTodo={[Function]}
+      todo={
+        Object {
+          "completed": true,
+          "id": 1,
+          "text": "Use CodeSandbox",
+        }
+      }
+    />
+  </ul>
+  <Footer
+    activeCount={1}
+    completedCount={1}
+    filter="show_all"
+    onClearCompleted={[Function]}
+    onShow={[Function]}
+  />
+</section>
+`;
+
+exports[`<MainSection /> simulates show todo with filter 1`] = `
+Object {
+  "filter": "show_active",
+}
+`;
+
+exports[`<MainSection /> simulates show todo with filter 2`] = `
+<section
+  className="main"
+>
+  <input
+    checked={false}
+    className="toggle-all"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <ul
+    className="todo-list"
+  >
+    <TodoItem
+      clearCompleted={[Function]}
+      completeAll={[Function]}
+      completeTodo={[Function]}
+      deleteTodo={[Function]}
+      editTodo={[Function]}
+      todo={
+        Object {
+          "completed": false,
+          "id": 0,
+          "text": "Use Redux",
+        }
+      }
+    />
+  </ul>
+  <Footer
+    activeCount={1}
+    completedCount={1}
+    filter="show_active"
+    onClearCompleted={[Function]}
+    onShow={[Function]}
+  />
+</section>
+`;
